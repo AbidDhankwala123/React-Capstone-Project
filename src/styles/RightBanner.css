@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,9.4rem);
+    justify-content: center;
+    align-items: center;
+}
+.entertainment-divs{
+    cursor: pointer;
+    height: 8.2rem;
+    width: 8.2rem;
+    border-radius: 6px;
+}
+.entertainment-headings{
+    text-transform: capitalize;
+    margin: 5px 0 0 10px;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.entertainment-images{
+    margin: 10px 0 0 10px;
+    height: 5rem;
+    width: 6.9rem;
+}
+.action-div{
+    background: #FF5209;
+}
+.drama-div{
+    background: #D7A4FF;
+}
+.romance-div{
+    background: #11B800;
+}
+.thriller-div{
+    background: #84C2FF;
+}
+.western-div{
+    background: #902500;
+}
+.horror-div{
+    background: #7358FF;
+}
+.fantasy-div{
+    background: #FF4ADE;
+}
+.music-div{
+    background: #E61E32;
+}
+.fiction-div{
+    background: #6CD061;
+}
+.next-page{
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2.4rem;
+    background: #148A08;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.next-page-div{
+    position: absolute;
+    right: 1.6rem;
+    bottom: 1.3rem;
+}
+.gborder{
+    outline: 4px solid #11B800;
+}

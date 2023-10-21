@@ -1,0 +1,12 @@
+.entertainment-btn{
+    border: none;
+    color: #FFF;
+    font-family: var(--font-family-roboto);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    border-radius: 2rem;
+    background: #148A08;
+    text-transform: capitalize;
+}

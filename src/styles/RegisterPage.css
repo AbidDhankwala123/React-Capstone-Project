@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Single+Day&display=swap');
+
+
+.leftside-part{
+    width: 50vw;
+    background: url("../assets/image\ 13.png") center/cover no-repeat;
+}
+.rightside-part{
+    background-color: black;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    position: absolute;
+    width: 50vw;
+    bottom: 3.4rem;
+    padding-left: 2rem;
+    font-family: var(--font-family-roboto);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+    letter-spacing: 1.1px;
+    color: white;
+}
+.form-heading{
+    color: var(--green-color);
+    font-family: "Single Day";
+    font-size: 3.8rem;
+    font-weight: 400;
+}
+.account{
+    margin-bottom: 1rem;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.form{
+    height: 28rem;
+    width: 23.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.input-divs{
+    margin-bottom: 8px;
+}
+div>.inputs{
+    width: 23.8rem;
+    height: 2.8rem;
+    border-radius: 3px;
+    background: #292929;
+    padding-left: 1.2rem;
+    color: var(--gray-color);
+    font-family: "DM Sans";
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: 1px solid var(--gray-color);
+}
+.checkbox{
+    cursor: pointer;
+    background: #D9D9D9;
+}
+.checkbox-text{
+    padding-left: 10px;
+    color: var(--gray-color);
+    font-family: "DM Sans";
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+
+}
+.signup-btn{
+    margin-bottom: 10px;
+    /* margin: 0 0 8px; */
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    cursor: pointer;
+    padding: 0.5rem 9.1rem;
+    border: none;
+    border-radius: 1.8rem;
+    background: var(--green-color);
+    color: #FFF;
+    font-family: var(--font-family-roboto);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+.terms-and-conditions,.to-know-more{
+    color: var(--gray-color);
+    font-family: var(--font-family-roboto);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    line-height: 1.2rem;
+
+}
+.green-text{
+    color: var(--green-color);
+}
+.error-text{
+    color: red;
+    font-family: "DM Sans";
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+:root{
+  --font-family-roboto: "Roboto",sans-serif;
+  --green-color:#72DB73;
+  --gray-color:#7C7C7C;
+}
+  
