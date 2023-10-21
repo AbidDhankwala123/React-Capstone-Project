@@ -13,80 +13,91 @@ import image9 from "../assets/western.png"
 
 
 const Category = () => {
-  let [buttonObjs,setButtonObjs] = useState([
+  let [buttonObjs, setButtonObjs] = useState([
     {
-      id:1,
-      btnName:"romance",
-      imgSource:image1,
-      gborder:false,
+      id: 1,
+      btnName: "romance",
+      imgSource: image1,
+      gborder: false,
     },
     {
-      id:2,
-      btnName:"action",
-      imgSource:image2,
-      gborder:false,
+      id: 2,
+      btnName: "action",
+      imgSource: image2,
+      gborder: false,
     },
     {
-      id:3,
-      btnName:"drama",
-      imgSource:image3,
-      gborder:false,
+      id: 3,
+      btnName: "drama",
+      imgSource: image3,
+      gborder: false,
     },
     {
-      id:4,
-      btnName:"fantasy",
-      imgSource:image4,
-      gborder:false,
+      id: 4,
+      btnName: "fantasy",
+      imgSource: image4,
+      gborder: false,
     },
     {
-      id:5,
-      btnName:"fiction",
-      imgSource:image5,
-      gborder:false,
+      id: 5,
+      btnName: "fiction",
+      imgSource: image5,
+      gborder: false,
     },
     {
-      id:6,
-      btnName:"horror",
-      imgSource:image6,
-      gborder:false,
+      id: 6,
+      btnName: "horror",
+      imgSource: image6,
+      gborder: false,
     },
     {
-      id:7,
-      btnName:"music",
-      imgSource:image7,
-      gborder:false,
+      id: 7,
+      btnName: "music",
+      imgSource: image7,
+      gborder: false,
     },
     {
-      id:8,
-      btnName:"thriller",
-      imgSource:image8,
-      gborder:false,
+      id: 8,
+      btnName: "thriller",
+      imgSource: image8,
+      gborder: false,
     },
     {
-      id:9,
-      btnName:"western",
-      imgSource:image9,
-      gborder:false,
-    },  
+      id: 9,
+      btnName: "western",
+      imgSource: image9,
+      gborder: false,
+    },
   ]);
 
-  let [isActive,setActive] = useState(false);
-  
+  let [error, setError] = useState(false);
+
+  function handleClick() {
+    if (buttonObjs.length < 3) {
+      setError(true);
+    }
+  }
+  let [isActive, setActive] = useState(false);
+
   let toggleGBorder = (id) => {
     // console.log(id);
-    setButtonObjs(buttonObjs.map((category) => category.id == id ? {...category,gborder:!category.gborder}:category ))
+    setButtonObjs(buttonObjs.map((category) => category.id == id ? { ...category, gborder: !category.gborder } : category));
+
     setActive(!isActive);
+    // setButtonObjs(buttonObjs.map((category) => category.id == id ? setActive(true):setActive(false)));
+
+
   }
 
-  
+
   return (
     <>
-      <div style={{height:"100vh",display:"flex",backgroundColor:"black"}}>
-        <LeftBanner buttonObjs={buttonObjs} isActive={isActive}/>
-        <RightBanner buttonObjs={buttonObjs} onToggle = {toggleGBorder}/>
+      <div style={{ height: "100vh", display: "flex", backgroundColor: "black" }}>
+        <LeftBanner isActive={isActive} objects={buttonObjs} setObjects={setButtonObjs} error={error} />
+        <RightBanner buttonObjs={buttonObjs} onToggle={toggleGBorder} onHandle={handleClick} />
       </div>
     </>
-    
+
   )
 }
 

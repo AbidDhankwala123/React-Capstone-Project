@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
 
 
-.form-headings{
+.form-headings {
     padding: 2.6rem;
     color: var(--green-color);
     font-family: "Single Day";
     font-size: 3rem;
     font-weight: 400;
 }
-.entertainment-list{
+
+.entertainment-list {
     padding-left: 2.6rem;
     color: #FFF;
     font-family: var(--font-family-roboto);
     font-size: 2.3rem;
     font-weight: 700;
 }
-.error-field-text{
+
+.error-field-text {
     position: absolute;
     bottom: 3rem;
     left: 2.5rem;
@@ -26,4 +28,3 @@
     font-weight: 400;
     letter-spacing: 0.5px;
 }
-

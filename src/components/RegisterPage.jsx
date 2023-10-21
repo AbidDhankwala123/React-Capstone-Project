@@ -1,4 +1,4 @@
-import React, { useState,useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import "../styles/RegisterPage.css"
 
@@ -80,17 +80,17 @@ const RegisterPage = () => {
     if (checkbox == false) {
       setErrorCheckbox("Check this box if you want to proceed");
       return true;
-     
+
     }
-    else{
+    else {
       setErrorCheckbox("");
       return false;
-      
+
     }
   }
 
   return (
-    <div className='registerpage-container' style={{display:"flex",height:"100vh"}}>
+    <div className='registerpage-container' style={{ display: "flex", height: "100vh" }}>
       <div className="leftside-part">
         <h1 className='heading'>Discover new things on Superapp</h1>
       </div>
@@ -129,27 +129,27 @@ const RegisterPage = () => {
           }
         }}>
           <div className='input-divs'>
-            <input type="text" ref={nameRef} name="name" className='inputs' value={name} onChange={(e) => {setName(e.target.value);setErrorName("");nameRef.current.style.border = 'none';}} placeholder='Name' onBlur={validateName} />
+            <input type="text" ref={nameRef} name="name" className='inputs' value={name} onChange={(e) => { setName(e.target.value); setErrorName(""); nameRef.current.style.border = 'none'; }} placeholder='Name' onBlur={validateName} />
             <p className='error-text'>{errorName}</p>
           </div>
 
           <div className='input-divs'>
-            <input type="text" ref={userNameRef} name="username" className='inputs' value={username}  onChange={(e) => {setUserName(e.target.value);setErrorUserName("");userNameRef.current.style.border = 'none';}} placeholder='UserName' onBlur={validateUserName} />
+            <input type="text" ref={userNameRef} name="username" className='inputs' value={username} onChange={(e) => { setUserName(e.target.value); setErrorUserName(""); userNameRef.current.style.border = 'none'; }} placeholder='UserName' onBlur={validateUserName} />
             <p className='error-text'>{errorUserName}</p>
           </div>
 
           <div className='input-divs'>
-            <input type="email" ref={emailRef} name="name" className='inputs' value={email} onChange={(e) => {setEmail(e.target.value);setErrorEmail("");emailRef.current.style.border = 'none';}} placeholder='Email' onBlur={validateEmail} />
+            <input type="email" ref={emailRef} name="name" className='inputs' value={email} onChange={(e) => { setEmail(e.target.value); setErrorEmail(""); emailRef.current.style.border = 'none'; }} placeholder='Email' onBlur={validateEmail} />
             <p className='error-text'>{errorEmail}</p>
           </div>
 
           <div className='input-divs'>
-            <input type="tel" ref={mobileRef} name="name" className='inputs' value={mobile} onChange={(e) => {setMobile(e.target.value);setErrorMobile("");mobileRef.current.style.border = 'none';}} placeholder='Mobile' onBlur={validateMobile} />
+            <input type="tel" ref={mobileRef} name="name" className='inputs' value={mobile} onChange={(e) => { setMobile(e.target.value); setErrorMobile(""); mobileRef.current.style.border = 'none'; }} placeholder='Mobile' onBlur={validateMobile} />
             <p className='error-text'>{errorMobile}</p>
           </div>
 
           <div className='input-divs'>
-            <input type="checkbox" className='checkbox' checked={checkbox} onChange={(e) => {setCheckbox(e.target.checked);setErrorCheckbox("");}} onBlur={validateCheckbox} /><span className='checkbox-text'>Share my registration data with Superapp</span>
+            <input type="checkbox" className='checkbox' checked={checkbox} onChange={(e) => { setCheckbox(e.target.checked); setErrorCheckbox(""); }} onBlur={validateCheckbox} /><span className='checkbox-text'>Share my registration data with Superapp</span>
             <p className='error-text'>{errorCheckbox}</p>
           </div>
 
@@ -157,7 +157,7 @@ const RegisterPage = () => {
             <button className='btn'>SIGN UP</button>
           </div>
 
-          <p style={{marginBottom:"3px"}} className='terms-and-conditions'>By clicking on Sign up. you agree to Superapp <span className='green-text'>Terms and Conditions of Use</span></p>
+          <p style={{ marginBottom: "3px" }} className='terms-and-conditions'>By clicking on Sign up. you agree to Superapp <span className='green-text'>Terms and Conditions of Use</span></p>
 
           <p className='to-know-more'>To learn more about how Superapp collects, uses, shares and protects your personal data please head Superapp <span className='green-text'>Privacy Policy</span></p>
         </form>
