@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/RightBanner.css"
 
-const RightBanner = ({ onToggle, buttonObjs }) => {
+const RightBanner = ({ onToggle, buttonObjs,onHanlde }) => {
 
 
   return (
@@ -21,7 +21,7 @@ const RightBanner = ({ onToggle, buttonObjs }) => {
       </div>
 
       <div className='next-page-div'>
-        <button className='next-page'>Next Page</button>
+        <button className='next-page' onClick={onHanlde}>Next Page</button>
       </div>
     </>
   )

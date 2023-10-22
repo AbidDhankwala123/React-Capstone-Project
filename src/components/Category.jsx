@@ -70,27 +70,34 @@ const Category = () => {
     },
   ]);
 
-  // let [error, setError] = useState(false);
+  let [error, setError] = useState(false);
 
-  // function handleClick() {
-  //   if (buttonObjs.length < 3) {
-  //     setError(true);
-  //   }
-  // }
+  let arr = [];
+
+  function handleClick() {
+    if (arr.length < 3) {
+      console.log(arr);
+      setError(true);
+      return true;
+    }
+    else{
+      setError(false);
+      return false;
+    }
+  }
 
   let toggleGBorder = (id) => {
     // console.log(id);
     setButtonObjs(buttonObjs.map((category) => category.id === id ? { ...category, gborder: !category.gborder } : category));
-
-
+    // setButtonObjs(buttonObjs.map((data) => arr.push(data)));
   }
 
 
   return (
     <>
       <div style={{ height: "100vh", display: "flex", backgroundColor: "black" }}>
-        <LeftBanner objects={buttonObjs} setObjects={setButtonObjs} />
-        <RightBanner onToggle={toggleGBorder} buttonObjs={buttonObjs} />
+        <LeftBanner error={error} objects={buttonObjs} setObjects={setButtonObjs} />
+        <RightBanner onToggle={toggleGBorder} buttonObjs={buttonObjs} onHanlde={handleClick} />
       </div>
     </>
 

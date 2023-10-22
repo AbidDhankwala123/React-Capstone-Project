@@ -5,7 +5,7 @@ import Button from './Button.jsx';
 
 
 
-const LeftBanner = ({ objects, setObjects }) => {
+const LeftBanner = ({ objects, setObjects,error }) => {
   let [buttonObjs, setButtonObjs] = useState([
     {
       id: 1,
@@ -62,7 +62,7 @@ const LeftBanner = ({ objects, setObjects }) => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", width: "35vw" }}>
-      <Text />
+      <Text error={error}/>
       <div className="button-container">
         {objects.map((name) => {
           return (
