@@ -1,14 +1,14 @@
 import React from 'react'
 import "../styles/RightBanner.css"
 
-const RightBanner = ({ buttonObjs, onToggle, onHandle }) => {
+const RightBanner = ({ onToggle, buttonObjs }) => {
 
 
   return (
     <>
       <div style={{ width: "65vw" }} className='grid-container'>
         {buttonObjs.map((name) => {
-          console.log(name);
+          // console.log(name);
           return (
             <div key={name.id} className={`${name.btnName}-div entertainment-divs ${name.gborder ? 'gborder' : ''}`} onClick={() => onToggle(name.id)}>
 
@@ -21,7 +21,7 @@ const RightBanner = ({ buttonObjs, onToggle, onHandle }) => {
       </div>
 
       <div className='next-page-div'>
-        <button className='next-page' onClick={onHandle}>Next Page</button>
+        <button className='next-page'>Next Page</button>
       </div>
     </>
   )

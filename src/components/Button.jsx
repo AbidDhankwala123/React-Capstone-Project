@@ -3,10 +3,10 @@ import "../styles/Button.css"
 import { FaTimes } from "react-icons/fa";
 
 
-const Button = ({ name, isActive, idx, onDelete }) => {
+const Button = ({ name, onDelete, idx }) => {
   return (
     <>
-      {isActive && <button className='entertainment-btn' >{name} <FaTimes onClick={() => onDelete(idx)} style={{ color: "#085C00", cursor: "pointer", paddingLeft: "5px" }} /></button>}
+      <button className='entertainment-btn' >{name} <FaTimes style={{ color: "#085C00", cursor: "pointer", paddingLeft: "5px" }} onClick={() => onDelete(idx)} /></button>
 
 
     </>

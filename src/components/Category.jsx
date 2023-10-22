@@ -70,21 +70,17 @@ const Category = () => {
     },
   ]);
 
-  let [error, setError] = useState(false);
+  // let [error, setError] = useState(false);
 
-  function handleClick() {
-    if (buttonObjs.length < 3) {
-      setError(true);
-    }
-  }
-  let [isActive, setActive] = useState(false);
+  // function handleClick() {
+  //   if (buttonObjs.length < 3) {
+  //     setError(true);
+  //   }
+  // }
 
   let toggleGBorder = (id) => {
     // console.log(id);
-    setButtonObjs(buttonObjs.map((category) => category.id == id ? { ...category, gborder: !category.gborder } : category));
-
-    setActive(!isActive);
-    // setButtonObjs(buttonObjs.map((category) => category.id == id ? setActive(true):setActive(false)));
+    setButtonObjs(buttonObjs.map((category) => category.id === id ? { ...category, gborder: !category.gborder } : category));
 
 
   }
@@ -93,8 +89,8 @@ const Category = () => {
   return (
     <>
       <div style={{ height: "100vh", display: "flex", backgroundColor: "black" }}>
-        <LeftBanner isActive={isActive} objects={buttonObjs} setObjects={setButtonObjs} error={error} />
-        <RightBanner buttonObjs={buttonObjs} onToggle={toggleGBorder} onHandle={handleClick} />
+        <LeftBanner objects={buttonObjs} setObjects={setButtonObjs} />
+        <RightBanner onToggle={toggleGBorder} buttonObjs={buttonObjs} />
       </div>
     </>
 
