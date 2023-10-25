@@ -1,0 +1,22 @@
+.time-and-weather-container{
+    border-radius: 33px;
+    width: 34.4rem;
+    height: 230px;
+    background-color: #101744;
+}
+.display-time{
+    padding-top: 10px;
+    border-radius: 33px 33px 0px 0px;
+    width: 34.4rem;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background: #FF4ADE;
+}
+.time{
+    color: #FFF;
+    font-family: var(--font-family-roboto);
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}

@@ -1,5 +1,6 @@
-import RegisterPage from './components/RegisterPage';
-import Category from './components/Category';
+import RegisterPage from './pages/RegisterPage';
+import Category from './pages/Category';
+import Home from './pages/Home';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -9,6 +10,7 @@ function App() {
 
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/category" element={<Category />} />
         </Routes>

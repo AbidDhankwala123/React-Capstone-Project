@@ -5,7 +5,7 @@ import Button from './Button.jsx';
 
 
 
-const LeftBanner = ({ objects, setObjects,error }) => {
+const LeftBanner = ({ objects, setObjects,error}) => {
   let [buttonObjs, setButtonObjs] = useState([
     {
       id: 1,
@@ -54,6 +54,7 @@ const LeftBanner = ({ objects, setObjects,error }) => {
     },
   ]);
 
+  
   let deleteCategory = (id) => {
     // console.log(id);
     setButtonObjs(buttonObjs.filter((category) => category.id != id))
@@ -64,9 +65,11 @@ const LeftBanner = ({ objects, setObjects,error }) => {
     <div style={{ display: "flex", flexDirection: "column", width: "35vw" }}>
       <Text error={error}/>
       <div className="button-container">
-        {objects.map((name) => {
+        {
+        objects.map((name) => {
+          // console.log(name);
           return (
-            name.gborder == true ? <Button key={name.id} name={name.btnName} onDelete={deleteCategory} idx={name.id} /> : ""
+            name.gborder ?  <Button key={name.id} name={name.btnName} onDelete={deleteCategory} idx={name.id} />: ""
           )
         })}
       </div>

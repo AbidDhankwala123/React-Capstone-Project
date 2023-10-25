@@ -8,7 +8,7 @@ const RightBanner = ({ onToggle, buttonObjs,onHanlde }) => {
     <>
       <div style={{ width: "65vw" }} className='grid-container'>
         {buttonObjs.map((name) => {
-          // console.log(name);
+          // console.log(name.btnName);
           return (
             <div key={name.id} className={`${name.btnName}-div entertainment-divs ${name.gborder ? 'gborder' : ''}`} onClick={() => onToggle(name.id)}>
 
