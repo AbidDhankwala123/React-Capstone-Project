@@ -7,14 +7,13 @@ const Info = () => {
   let [username,setUsername] = useState("");
   let [email,setEmail] = useState("");
 
-  let [arr,setArr] = useState([]);
+  let [categories,setCategories] = useState([]);
   
 useEffect(() => {
   setName(localStorage.getItem("name"));
   setUsername(localStorage.getItem("username"));
   setEmail(localStorage.getItem("email"));
-  setArr(JSON.parse(localStorage.getItem("categories")));
-
+  setCategories(JSON.parse(localStorage.getItem("categories")));
 },[])
 
   return (
@@ -27,11 +26,7 @@ useEffect(() => {
         <p className='email-text'>{email}</p>
         <p className='username-text'>{username}</p>
         <div className="new-button-container">
-          {arr.map((element,idx) => (
-            <div className='new-button' key={idx}>{element}</div>
-
-          )
-          )}
+          {categories.map((element,idx) =>  <div className='new-button' key={idx}>{element}</div> )}
         </div>
       </div>
     </section>

@@ -67,7 +67,6 @@ const LeftBanner = ({ objects, setObjects,error}) => {
       <div className="button-container">
         {
         objects.map((name) => {
-          // console.log(name);
           return (
             name.gborder ?  <Button key={name.id} name={name.btnName} onDelete={deleteCategory} idx={name.id} />: ""
           )

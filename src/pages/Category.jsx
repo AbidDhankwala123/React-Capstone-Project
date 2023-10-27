@@ -103,7 +103,7 @@ const Category = () => {
   return (
     <>
       <div style={{ height: "100vh", display: "flex", backgroundColor: "black" }}>
-        <LeftBanner error={error} objects={buttonObjs} setObjects={setButtonObjs} setArr={setArr} arr={arr} />
+        <LeftBanner error={error} objects={buttonObjs} setObjects={setButtonObjs} />
         <RightBanner onToggle={toggleGBorder} buttonObjs={buttonObjs} onHanlde={handleClick} />
       </div>
     </>

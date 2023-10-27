@@ -1,22 +1,91 @@
-.time-and-weather-container{
+.time-and-weather-container {
     border-radius: 33px;
-    width: 34.4rem;
-    height: 230px;
+    width: 23.5rem;
+    height: 170px;
     background-color: #101744;
 }
-.display-time{
+
+.display-time {
     padding-top: 10px;
     border-radius: 33px 33px 0px 0px;
-    width: 34.4rem;
+    width: 23.5rem;
     height: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background: #FF4ADE;
 }
-.time{
+
+.time {
     color: #FFF;
     font-family: var(--font-family-roboto);
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     letter-spacing: 1px;
+}
+
+.display-weather {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.weather-icon {
+    height: 75px;
+    width: 75px;
+}
+
+.weather {
+    color: #FFF;
+    font-family: var(--font-family-roboto);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.white-line {
+    width: 2px;
+    height: 45px;
+    background-color: white;
+    margin-top: 25px;
+}
+
+.degree-celsius {
+    color: #FFF;
+    font-family: var(--font-family-roboto);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.pressure-icon {
+    width: 11px;
+    height: 21px;
+}
+
+.pressure,
+.wind,
+.humidity {
+    display: inline-block;
+    width: 80px;
+    color: #FFF;
+    font-family: var(--font-family-roboto);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    line-height: 1.2rem;
+}
+
+.wind-icon {
+    width: 27px;
+    height: 21px;
+}
+
+.humidity-icon {
+    width: 14px;
+    height: 21px;
+}
+
+.wind-humidity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }

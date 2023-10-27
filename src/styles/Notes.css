@@ -1,0 +1,35 @@
+.notes-container{
+    background: #F1C75B;
+    border-radius: 12px;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    top: 15px;
+    left: 32rem;
+}
+.notes-container>h2{
+    padding: 20px 20px 10px;
+    font-family: var(--font-family-roboto);
+    letter-spacing: 0.8px;
+}
+.notes-container>textarea{
+    padding: 10px 20px;
+    height: 280px;
+    width: 290px;
+    font-family: var(--font-family-roboto);
+    line-height: 1rem;
+    letter-spacing: 0.8px;
+    text-align: justify;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    overflow: auto;
+}
+.notes-container>textarea::-webkit-scrollbar {
+    width: 10px;
+}
+.notes-container>textarea::-webkit-scrollbar-track {
+    background-color: #FFE6A6;
+    border-radius: 10px;
+}
