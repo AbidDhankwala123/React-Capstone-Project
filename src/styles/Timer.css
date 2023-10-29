@@ -1,0 +1,55 @@
+.timer-container {
+    height: 32vh;
+    width: 60vw;
+    border-radius: 1.2rem;
+    background: #1E2343;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 3px 2.2rem;
+}
+.timer-countdown {
+    height: 25vh;
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer-time {
+    color: #949494;
+    font-family: var(--font-family-roboto);
+    font-size: 1.3rem;
+    margin: 10px -15px;
+}
+
+.hms,
+.dots {
+    color: #FFF;
+    font-family: var(--font-family-roboto);
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.dots {
+    margin-top: 5rem;
+}
+
+.timer-btn-container {
+    position: absolute;
+    right: 6rem;
+    bottom: 5px;
+}
+
+.timer-btn {
+    cursor: pointer;
+    border: none;
+    padding: 0.3rem 9rem;
+    border-radius: 2.4rem;
+    background: #FF6A6A;
+    color: #FFF;
+    font-family: var(--font-family-roboto);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}

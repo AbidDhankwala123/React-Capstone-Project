@@ -1,29 +1,29 @@
 .news-container{
     position: absolute;
-    height: 550px;
-    width: 300px;
+    height: 34.4rem;
+    width: 18.8rem;
     right: 5rem;
-    top: 20px;
-    border-radius: 19px;
+    top: 1.3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .api-img-div{
-    height: 220px;
+    height: 13.4rem;
 }
 .api-img{
-    height: 220px;
-    width: 300px;
+    border-radius: 1.2rem 1.2rem 0 0;
+    height: 13.4rem;
+    width: 18.8rem;
 }
 .date-time-div{
     background: #0000055e;
-    padding: 10px 0 0 20px;
+    padding: 0.7rem 0 0 1.3rem;
 }
 .question-text{
     color: #FFF;
     font-family: var(--font-family-roboto);
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 400;
     letter-spacing: 0.64px;
     padding-bottom: 7px;
@@ -31,23 +31,23 @@
 .date-and-time{
     color: #FFF;
     font-family: var(--font-family-roboto);
-    height: 30px;
-    font-size: 12px;
+    height: 1.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    letter-spacing: 0.365px;
+    letter-spacing: 0.4px;
     display: flex;
     gap: 5px;
 }
 .description{
-    padding: 10px 20px;
-    border-radius: 0 0 19px 19px;
-    height: 250px;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0 0 1.2rem 1.2rem;
+    height: 15.7rem;
     background: #FFF;
     overflow: auto;
     color: #272727;
     text-align: justify;
     font-family: var(--font-family-roboto);
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 161.688%;
 }

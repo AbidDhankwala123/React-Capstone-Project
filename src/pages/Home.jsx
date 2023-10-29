@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Info from '../components/Info.jsx';
-import TimeAndWeather from '../components/TimeAndWeather.jsx';
+import Weather from '../components/Weather.jsx';
 import News from '../components/News.jsx';
 import Timer from '../components/Timer.jsx';
 import Notes from '../components/Notes.jsx';
@@ -37,7 +37,7 @@ const Home = () => {
 
     <div style={{ backgroundColor: "black", height: "100vh", padding: "10px 0 0 50px" }}>
       <Info />
-      <TimeAndWeather date={date} time={time} />
+      <Weather date={date} time={time} />
       <Timer />
       <Notes />
       <News date={date} time={time} />

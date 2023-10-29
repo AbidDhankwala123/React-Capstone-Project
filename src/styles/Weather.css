@@ -1,15 +1,16 @@
 .time-and-weather-container {
-    border-radius: 33px;
+    border-radius: 2.1rem;
     width: 23.5rem;
-    height: 170px;
+    height: 10.6rem;
     background-color: #101744;
+    margin-bottom: 1.6rem;
 }
 
 .display-time {
     padding-top: 10px;
-    border-radius: 33px 33px 0px 0px;
+    border-radius: 2.1rem 2.1rem 0px 0px;
     width: 23.5rem;
-    height: 50px;
+    height: 3.1rem;
     display: flex;
     justify-content: space-around;
     background: #FF4ADE;
@@ -18,7 +19,7 @@
 .time {
     color: #FFF;
     font-family: var(--font-family-roboto);
-    font-size: 28px;
+    font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 1px;
 }
@@ -31,57 +32,57 @@
 }
 
 .weather-icon {
-    height: 75px;
-    width: 75px;
+    height: 4.7rem;
+    width: 4.7rem;
 }
 
 .weather {
     color: #FFF;
     font-family: var(--font-family-roboto);
-    font-size: 17px;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
 .white-line {
     width: 2px;
-    height: 45px;
+    height: 2.8rem;
     background-color: white;
-    margin-top: 25px;
+    margin-top: 1.6rem;
 }
 
 .degree-celsius {
     color: #FFF;
     font-family: var(--font-family-roboto);
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
 .pressure-icon {
-    width: 11px;
-    height: 21px;
+    width: 0.7rem;
+    height: 1.3rem;
 }
 
 .pressure,
 .wind,
 .humidity {
     display: inline-block;
-    width: 80px;
+    width: 4.4rem;
     color: #FFF;
     font-family: var(--font-family-roboto);
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 400;
     margin-left: 5px;
     line-height: 1.2rem;
 }
 
 .wind-icon {
-    width: 27px;
-    height: 21px;
+    width: 1.7rem;
+    height: 1.3rem;
 }
 
 .humidity-icon {
-    width: 14px;
-    height: 21px;
+    width: 0.9rem;
+    height: 1.3rem;
 }
 
 .wind-humidity {

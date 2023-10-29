@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Single+Day&display=swap');
+
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+.movies-heading{
+    color: var(--green-color);
+    font-family: "Single Day";
+    font-size: 2rem;
+    font-weight: 400;
+}
+.choosen-entertainment{
+    color: #FFF;
+    font-family: var(--font-family-roboto);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.6px; 
+}
+.display-movies{
+    margin-top: 0.7rem;
+    margin-left: 2.5rem;
+    overflow: auto;
+}
+.display-movies>div{
+    margin-top: 0.7rem;
+}
+.category-type{
+    text-transform: capitalize;
+    color: #878787;
+    font-family: var(--font-family-roboto);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+.flex-area{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-area>img{
+    height: 9.5rem;
+    width: 15.6rem;
+}

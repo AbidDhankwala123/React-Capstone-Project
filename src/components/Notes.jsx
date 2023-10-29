@@ -5,7 +5,7 @@ const Notes = () => {
   return (
     <section className='notes-container'>
       <h2>All Notes</h2>
-      <textarea onChange={(e) => localStorage.setItem("values",e.target.value)}></textarea>
+      <textarea onChange={(e) => localStorage.setItem("myNotes",e.target.value)}></textarea>
       
     </section>
   )

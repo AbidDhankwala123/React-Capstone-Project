@@ -1,5 +1,4 @@
 .info-container{
-    /* border: 3px solid red; */
     padding: 0.5rem 0 0 1.3rem;
     display: flex;
     justify-content: space-between;
@@ -7,15 +6,12 @@
     background: #5746EA;
     width: 23rem;
     height: 11rem;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 .music-lover{
-    /* border: 3px solid red; */
     height: 10rem;
 }
 .right-text{
-    /* border: 3px solid red; */
-
     width: 17rem;
 }
 .name-text,.email-text{
@@ -48,7 +44,6 @@
     letter-spacing: 0.5px;
 }
 .new-button-container{
-    /* border: 3px solid white; */
     margin-left: 0.4rem;
     padding-top: 0.2rem;
     height: 5rem;

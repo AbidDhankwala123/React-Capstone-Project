@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import "../styles/TimeAndWeather.css"
+import "../styles/Weather.css"
 import pressure from "../assets/pressure.png"
 import wind from "../assets/wind.png"
 import humidity from "../assets/humidity.png"

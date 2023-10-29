@@ -88,7 +88,7 @@ const Category = () => {
       console.log("Filled array: ",arr,typeof arr);
       setError(false);
       localStorage.setItem("categories",JSON.stringify(arr));
-      navigate('/');
+      navigate('/home');
       return false;
     }
   }
